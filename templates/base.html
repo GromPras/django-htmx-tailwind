@@ -1,0 +1,16 @@
+{% load webpack_loader static %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% stylesheet_pack 'app' %}
+    </head>
+    <body>
+        {% block content %}
+        {% endblock content %}
+        {% javascript_pack 'app' %}
+    </body>
+</html>
